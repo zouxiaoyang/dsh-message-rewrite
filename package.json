@@ -1,0 +1,56 @@
+{
+  "name": "dsh-message-rewrite",
+  "version": "0.1.0",
+  "description": "Codex 风格消息原地编辑（DeepSeek Harness / DSH 插件）：hover 历史用户消息 → ✎ 编辑 → 同会话从编辑点截断并重新生成后续回复。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "rewrite",
+    "message",
+    "edit",
+    "codex"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zouxiaoyang/dsh-message-rewrite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zouxiaoyang/dsh-message-rewrite/issues"
+  },
+  "homepage": "https://github.com/zouxiaoyang/dsh-message-rewrite#readme"
+}

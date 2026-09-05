@@ -1,0 +1,5 @@
+# dsh-message-rewrite bundle patch
+# 声明 dsh.bundle.patch 指向本文件后，即可作为 profile bundle 安装。
+- insert:
+    - id: dsh-message-rewrite
+      name: 'dsh-message-rewrite'
