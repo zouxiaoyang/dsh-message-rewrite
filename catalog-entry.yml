@@ -1,0 +1,8 @@
+# DSH message in-place editing — see https://github.com/zouxiaoyang/dsh-message-rewrite
+# 用途：awesome-dsh-plugin 市场收录条目（提交 PR 时放到 data/plugins/zouxiaoyang__dsh-message-rewrite.yml）
+url: https://github.com/zouxiaoyang/dsh-message-rewrite
+name: zouxiaoyang/dsh-message-rewrite
+category: ui
+description:
+  en: "Codex-style in-place message editing for DSH: hover any past user message, hit ✎, and the conversation is truncated at that point and re-generated in the same session — edit chains, fork for mid-conversation edits, and full virtual-scroll compatibility."
+  zh: "DSH 的 Codex 风格消息原地编辑：hover 任意历史用户消息点 ✎，对话即从该点截断并同会话重新生成——支持编辑链、中间消息自动 fork、虚拟滚动长会话不错位。"
