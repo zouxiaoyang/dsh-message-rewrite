@@ -1,5 +1,8 @@
 # dsh-message-rewrite
 
+[![npm](https://img.shields.io/npm/v/dsh-message-rewrite)](https://www.npmjs.com/package/dsh-message-rewrite)
+[![GitHub](https://img.shields.io/github/stars/zouxiaoyang/dsh-message-rewrite)](https://github.com/zouxiaoyang/dsh-message-rewrite)
+
 > **DeepSeek Harness（DSH）消息原地编辑插件** —— Codex 风格：hover 历史用户消息 → ✎ 编辑 → 同会话从编辑点截断旧回复并重新生成。
 
 适用于 DeepSeek Harness 桌面 App / Web（DSH profile 插件体系，Cordis bundle 双半包：host `index.js` + client `client.js`）。
@@ -32,7 +35,7 @@
    在 `dsh.profile.bundles` 数组加入：`"dsh-message-rewrite"`
 3. 安装依赖并重启 DSH server（如 `~/bin/dsh-server-restart`），刷新页面。
 
-### 方式 B：从 npm 安装（如已发布）
+### 方式 B：从 npm 安装（已发布）
 
 ```bash
 cd ~/.dsh/profiles/web
